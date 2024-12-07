@@ -26,9 +26,9 @@ function connectMQTT() {
     const mqttStatus = document.getElementById('mqttStatus'); // Elemen status koneksi MQTT
 
     // Membuat koneksi ke broker MQTT dengan autentikasi username dan password
-    mqttClient = mqtt.connect('wss://07cdeabcc79a481eb59795ff5673171d.s1.eu.hivemq.cloud:8884/mqtt', {
-        username: 'GPS Nano',
-        password: 'Gpsnano6',
+    mqttClient = mqtt.connect('wss://yourMqttWebsocket/mqtt', {
+        username: 'userNameConnection',
+        password: 'passwordConnection',
     });
 
     // Event handler ketika koneksi berhasil
